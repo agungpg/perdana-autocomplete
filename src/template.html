@@ -164,7 +164,19 @@
     document.addEventListener('DOMContentLoaded', () => {
         PerdanaAutoComplete.init({
             list: suggestion,
-            id: "search-auto-complete"
+            id: "search-auto-complete",
+            withButton: {
+                id: 'search-btn',
+                className: 'search-btn',
+                text: 'Search',
+                onClick: (id, value) => {
+                    console.log("onClick: ", {id, value})
+                },
+                iconSrc: 'https://img.icons8.com/ios-filled/50/000000/search.png',
+                position: 'right',
+                backgroundColor: '#007BFF',
+                textColor: '#fff'
+            }
         })
     })
     </script>

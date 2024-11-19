@@ -1,11 +1,12 @@
 .pg-cont {
     width:280px;
     padding: 0px;
+    position: relative;
 }
 .pg-inp-auto-comp {
     height: 46px;
     width:280px;
-    border-radius: 8px;
+    border-radius: 4px;
     box-sizing: border-box;
     color: inherit; 
     font-size: 20px;
@@ -18,6 +19,7 @@
     overflow: auto;
     padding: 0;          
     margin: 0;
+    position: absolute;
 }
 .pg-suggest-cont > .pg-suggestion-item {
     list-style-type: none;
